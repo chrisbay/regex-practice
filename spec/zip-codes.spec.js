@@ -19,6 +19,10 @@ describe("zip code validation", function(){
         expect(isValidZipCode("12201-7a50")).toBe(false);
     });
 
+    xit("should not allow strings properly containing zip codes", function(){
+        expect(isValidZipCode("LaunchCode's zip code is 63108.")).toBe(false);
+    });
+
     xit("should not allow things that aren't even close", function(){
         expect(isValidZipCode("zucchini")).toBe(false);
     });
