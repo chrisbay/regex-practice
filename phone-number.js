@@ -1,6 +1,6 @@
 function isValidPhoneNumber(phoneNum) {
-
-    // TODO: add code to get tests to pass
+    const matches = phoneNum.match(/^\(?\d{3}\)?(\s*-?\s*)?\d{3}(\s*-?\s*)?\d{4}$/);
+    return matches !== null; 
 
 };
 
