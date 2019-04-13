@@ -3,11 +3,7 @@ const isValidZipCode = mod.isValidZipCode;
 
 describe("zip code validation", function(){
 
-    it("should allow 5 digits", function(){
-        expect(isValidZipCode(63108)).toBe(true);
-    });
-
-    xit("should allow valid codes as strings", function(){
+    it("should allow 5-digit codes", function(){
         expect(isValidZipCode("63108")).toBe(true);
     });
 
@@ -25,6 +21,10 @@ describe("zip code validation", function(){
 
     xit("should not allow things that aren't even close", function(){
         expect(isValidZipCode("zucchini")).toBe(false);
+    });
+
+    xit("should allow 5-digit codes as numbers", function(){
+        expect(isValidZipCode(63108)).toBe(true);
     });
 
 });
