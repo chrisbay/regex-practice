@@ -52,6 +52,6 @@ describe("email validation", function(){
     });
 
     xit("should allow - in domain", function(){
-        expect(isValidEmail("chris@launch-code. org")).toBe(false);
+        expect(isValidEmail("chris@launch-code.org")).toBe(true);
     });
 });
